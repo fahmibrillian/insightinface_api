@@ -1,0 +1,11 @@
+name: CI-CD
+on:
+  push: 
+    branches: [main]
+jobs: 
+  build_1: 
+    runs-on: self-hosted
+    steps: 
+    - run: |
+        cd /home/brillian/insightinface_api
+        git pull origin main
