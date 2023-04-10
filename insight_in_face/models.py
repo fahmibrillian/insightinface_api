@@ -1,7 +1,7 @@
 from django.db import models
 
 class FaceModel(models.Model):
-    photo = models.ImageField(upload_to='photos/')
+    photo = models.ImageField(upload_to='photos')
     device_id = models.CharField(max_length=255, blank=True, null=True)
     gender = models.CharField(max_length=10, blank=True, null=True)
     age = models.IntegerField(blank=True, null=True)
